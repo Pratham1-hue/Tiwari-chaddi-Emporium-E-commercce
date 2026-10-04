@@ -22,6 +22,7 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 
 # debug
@@ -30,8 +31,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files — NEVER commit real credentials
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +41,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editors / IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# local scratch scripts (e.g. inspect-order.tmp.js, cleanup.tmp.js)
+*.tmp.js
+
+# opencode session files
+.opencode/
